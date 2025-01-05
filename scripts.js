@@ -18,12 +18,27 @@ function playRound() {
     let computerChoice = getComupterChoice();
     if (userChoice == computerChoice) {
         console.log("Tie");
+        userScore++;
+        computerScore++;
     } else if (((userChoice=="rock")&&(computerChoice=="paper")) || ((userChoice=="paper")&&(computerChoice=="scissor")) || ((userChoice=="scissor")&&(computerChoice=="rock"))) {
         console.log(`You Lose! ${computerChoice} beats ${userChoice}`);
+        computerScore++;
     } else {
         console.log(`You Win! ${userChoice} beats ${computerChoice}`);
+        userScore++;
     }
 }
 
 let userScore = 0;
 let computerScore = 0;
+
+function playGame(){
+    for(let i = 0; i < 5; i++){
+        playRound();
+        console.log(`User: ${userScore}`);
+        console.log(`Computer: ${computerScore}`);
+    }
+    
+}
+
+playGame();
