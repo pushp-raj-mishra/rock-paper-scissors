@@ -12,3 +12,16 @@ function getComupterChoice() {
 function getUserChoice() {
     return prompt("Enter Your Choice: (rock, paper, scissor)");
 }
+
+function playRound() {
+    let userChoice = getUserChoice().toLowerCase();
+    let computerChoice = getComupterChoice();
+    if (userChoice == computerChoice) {
+        console.log("Tie");
+    } else if (((userChoice=="rock")&&(computerChoice=="paper")) || ((userChoice=="paper")&&(computerChoice=="scissor")) || ((userChoice=="scissor")&&(computerChoice=="rock"))) {
+        console.log(`You Lose! ${computerChoice} beats ${userChoice}`);
+    } else {
+        console.log(`You Win! ${userChoice} beats ${computerChoice}`);
+    }
+    }
+
