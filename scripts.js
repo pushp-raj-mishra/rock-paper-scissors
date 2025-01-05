@@ -35,10 +35,16 @@ let computerScore = 0;
 function playGame(){
     for(let i = 0; i < 5; i++){
         playRound();
-        console.log(`User: ${userScore}`);
-        console.log(`Computer: ${computerScore}`);
     }
-    
+    console.log(`User: ${userScore}`);
+    console.log(`Computer: ${computerScore}`);
+    if (userScore==computerScore) {
+        console.log(`Tie`);
+    } else if (userScore>computerScore) {
+        console.log(`You Win`);
+    } else {
+        console.log(`Computer Wins`);
+    }
 }
 
 playGame();
