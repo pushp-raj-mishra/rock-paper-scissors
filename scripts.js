@@ -23,5 +23,7 @@ function playRound() {
     } else {
         console.log(`You Win! ${userChoice} beats ${computerChoice}`);
     }
-    }
+}
 
+let userScore = 0;
+let computerScore = 0;
