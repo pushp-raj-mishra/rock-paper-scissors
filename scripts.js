@@ -12,5 +12,3 @@ function getComupterChoice() {
 function getUserChoice() {
     return prompt("Enter Your Choice: (rock, paper, scissor)");
 }
-
-console.log(getUserChoice());
