@@ -6,3 +6,17 @@ body {
 h1 {
     text-align: center;
 }
+
+.main {
+    display: flex;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}
+
+.content {
+    height: 50%;
+    width: 50%;
+}
